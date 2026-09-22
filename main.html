@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stitch | Frontend Developer</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">Stitch<span>.dev</span></a>
+            
+            <nav class="nav" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Навыки</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Проекты</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Обо мне</a></li>
+                    <li class="nav__item"><a href="#contacts" class="nav__link nav__link--btn">Контакты</a></li>
+                </ul>
+                <button class="nav__close" id="nav-close">Закрыть<i class="fas fa-times"></i></button>
+            </nav>
+
+            <button class="header__burger" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="container hero__container">
+                <span class="hero__greeting">Привет, я</span>
+                <h1 class="hero__title">Stitch</h1>
+                <h2 class="hero__subtitle">Frontend Developer</h2>
+                <p class="hero__description">
+                    Создаю быстрые, адаптивные и удобные веб-интерфейсы. 
+                    Превращаю идеи и макеты в чистый, поддерживаемый код.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#projects" class="btn btn--primary">Смотреть проекты</a>
+                    <a href="https://github.com/stitch-devv" class="btn btn--outline">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section__title">Мой стек технологий</h2>
+                <div class="skills__grid">
+                    <div class="skill-card">
+                        <i class="fab fa-html5 skill-card__icon" style="color: #e34c26;"></i>
+                        <h3 class="skill-card__title">HTML</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt skill-card__icon" style="color: #264de4;"></i>
+                        <h3 class="skill-card__title">CSS / SASS</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js skill-card__icon" style="color: #f0db4f;"></i>
+                        <h3 class="skill-card__title">JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react skill-card__icon" style="color: #61dbfb;"></i>
+                        <h3 class="skill-card__title">React</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt skill-card__icon" style="color: #f1502f;"></i>
+                        <h3 class="skill-card__title">Git / GitHub</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section__title">Избранные проекты</h2>
+                <div class="projects__grid">
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <img src="./images/logo-9DON7Azi.png" alt="Скриншот проекта Интернет-магазин">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Образовательная платформа MentAI</h3>
+                            <p class="project-card__description">
+                                Веб-платформа с помощью которой можно подготовиться к экзамен(TEOFL, IELTS, ОРТ)
+                            </p>
+                            <div class="project-card__tech">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://bilim-hub.vercel.app/" class="btn-link"> Live Demo</a>
+                                <a href="https://github.com/Dev-Bektur/MentAI.git" class="btn-link"> Код</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <img src="./images/logo.jpeg" alt="Скриншот проекта Погодное приложение">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">UrbanBalance</h3>
+                            <p class="project-card__description">
+                                Интерактивный сайт для объединения урбанистов, экологов и единомышленников. Цель этого проекта - предоставить удобный инструмент для фиксации актуальных проблем и совместного поиска решений.
+                            </p>
+                            <div class="project-card__tech">
+                                <span>HTML</span><span>JavaScript</span><span>React</span><span>CSS</span><span>Typescript</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://urban-balance-nv1.vercel.app/" class="btn-link">Live Demo</a>
+                                <a href="https://github.com/Dev-Bektur/UrbanBalance.git" class="btn-link"> Код</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card__image">
+                            <img src="./images/photo_2026-06-07_15-37-01.jpg" alt="Скриншот проекта Task Tracker">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">GoGlobal</h3>
+                            <p class="project-card__description">
+                                Менеджер задач с возможностью добавления, удаления, отметки выполнения и drag-and-drop сортировкой.
+                            </p>
+                            <div class="project-card__tech">
+                                <span>HTML</span><span>CSS</span><span>Vanilla JS</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://go-global-project.vercel.app/" class="btn-link"> Live Demo</a>
+                                <a href="https://github.com/Dev-Bektur/Go-Global-project.git" class="btn-link"> Код</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="container about__container">
+                <div class="about__image">
+                    <img src="https://placehold.co/400x400/334155/white?text=Photo" alt="Мое фото">
+                </div>
+                <div class="about__content">
+                    <h2 class="section__title section__title--left">Обо мне</h2>
+                    <p class="about__text">
+                        Я начинающий frontend-разработчик, увлеченный созданием удобных и эстетичных веб-интерфейсов. 
+                        Мой путь в IT начался с желания понимать, как работают сайты, и теперь я превращаю дизайн-макеты в живой, интерактивный код.
+                    </p>
+                    <p class="about__text">
+                        Сейчас я активно углубляю свои знания в <strong>JavaScript</strong> и начинаю изучать <strong>React</strong>. 
+                        Активно участвую в хакатонах, проектных работах, конкурсах и стартапах
+                    </p>
+                    <a href="resume.pdf" download="Резюме" class="btn btn--primary" style="margin-top: 20px;"> Скачать резюме</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="container footer__container">
+            <h3 class="footer__title">Давайте работать вместе!</h3>
+            <p class="footer__text">Открыт к предложениям о стажировке или работе Junior Frontend Developer.</p>
+            
+            <div class="footer__socials">
+                <a href="https://t.me/stitch_dev" target="_blank" class="social-link" title="Telegram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/3840px-Telegram_logo.svg.png" alt="">
+                </a>
+                <a href="https://github.com/stitch-devv" target="_blank" class="social-link" title="GitHub">
+                    <img src="https://img.icons8.com/ios11/512/228BE6/github.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/stitch.dev?igsh=MXAzcGpzOHg1bDFiYw==" target="_blank" class="social-link" title="Email">
+                    <img src="https://img.icons8.com/ios11/512/228BE6/instagram-circle.png" alt="">
+                </a>
+            </div>
+            
+            <p class="footer__copyright">Stitch.dev | Frontend Developer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
